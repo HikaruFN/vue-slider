@@ -24,7 +24,7 @@
                 <!--Contenitore pallini carousel-->
                 <div class="circles-container">
                     <!--Pallino/i-->
-                    <span v-for="img in carouselImg" class="circle" :class="{'active': index == defaultImg}"><i class="fas fa-circle"></i></span> <!--con V-for stampo tanti span per ogni elemento dell'array =>carouselImg -->
+                    <span v-for="(img, index) in carouselImg" class="circle" :class="(index == defaultImg) ? 'active' : null"><i class="fas fa-circle"></i></span> <!--con V-for stampo tanti span per ogni elemento dell'array =>carouselImg -->
                 </div>
             </div>    
         </div>
