@@ -16,18 +16,17 @@
             <div class="slider-container">
                 <div class="carousel-container">
                     <!--Freccia Sx-->
-                    <span class="chevron"><i class="fas fa-chevron-left"></i></span>
-                    <!--Immagini-->
-                    <img src="img/campagna.jpg" alt="">
+                    <span v-on:click="chevronLeft" class="chevron"><i class="fas fa-chevron-left"></i></span> <!--con v-on:click richiamo la funzione chevronLeft dai methods-->
+                    <img :src="carouselImg[defaultImg]" alt=""> <!--V-bind legato alla defaultImg di data (attualmente indice 0 dell'array =>carouselImg)-->
                     <!--Freccia Dx-->
-                    <span class="chevron"><i class="fas fa-chevron-right"></i></span>
+                    <span v-on:click="chevronRight" class="chevron"><i class="fas fa-chevron-right"></i></span> <!--con v-on:click richiamo la funzione chevronRight dai methods-->
                 </div>
                 <!--Contenitore pallini carousel-->
                 <div class="circles-container">
-                    <span class="circle" :class="active"><i class="fas fa-circle"></i></span>
+                    <!--Pallino/i-->
+                    <span v-for="img in carouselImg" class="circle"><i class="fas fa-circle"></i></span> <!--con V-for stampo tanti span per ogni elemento dell'array =>carouselImg -->
                 </div>
-            </div>
-            
+            </div>    
         </div>
     </main>
     <!--FINE MAIN-->
