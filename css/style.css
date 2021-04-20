@@ -46,6 +46,6 @@ img{
     color: white;
     padding: 20px;
 }
-.active{
+.circles-container.active{
     color: blue;
 }
