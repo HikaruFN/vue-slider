@@ -1,0 +1,35 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*COMMON*/
+img{
+    width: 100%;
+    padding: 0 20px;/*dopo provalo*/
+}
+.chevron{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/*MAIN*/
+/*Slider*/
+.slider-container{
+    max-width: 80%;
+    height: 400px;/**/
+    background-color: blue;/**/
+    margin: auto;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+
+/*Circles*/
+.circles-container{
+    
+}
